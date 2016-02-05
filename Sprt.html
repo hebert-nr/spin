@@ -1,0 +1,54 @@
+<!-- Enter number of users.
+Divide the number of users by 4 (as there are 4 houses)
+Spin the wheel.
+Check to see what house is selected 
+Cue Audio
+minus one from the house chosen.
+if the house number = 0, remove house from list for choosing.
+play until all users have been sorted.
+
+
+Apply a button "All Witches and Wizards Have been sorted."
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>House Sorter</title>
+</head>
+<body>
+
+<div>
+
+<h4>How many new students do we have this year?</h4>
+<input id="btn1" type="text" />
+<button onclick="chooseHouse();">Enter</button>
+
+<h1 id="wi"></h1>
+</div>	
+
+<script>
+function chooseHouse(){
+var val = btn1.value;
+var a = "So there is going to be " + (val/4).toFixed() + " new witches and wizards in each house.");
+var b="So there is going to be about " + (val/4).toFixed() + " new witches and wizards in each house, give or take.";
+
+document.getElementById("wi").innerHTML = a;
+
+//if(val == 0 || val == null){
+//document.getElementById("wi").innerHTML= "You forgot to enter a number."
+//}
+//else if(val%4==0){
+
+//document.getElementById("wi").innerHTML = about;
+//}else{
+
+//document.getElementById("wi").innerHTML = actual;
+//}
+}
+
+</script>
+</body>
+
+
+</html>
