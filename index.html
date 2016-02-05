@@ -15,17 +15,18 @@ Apply a button "All Witches and Wizards Have been sorted."
 <html>
 <head>
 <title>House Sorter</title>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 <body>
 
-<div>
+<div id="wrapper">
 
-<h4>How many new students do we have this year?</h4>
+<h4 id="new">How many new students do we have this year?</h4>
 <input id="btn1" type="text" />
-<button onclick="chooseHouse();">Enter</button>
+<button onclick="chooseHouse();" id="thebtn">Enter</button>
 
 <h2 id="wi"></h2>
-<iframe id="wheel" src=""  width="500" height="500" scrolling="no" frameborder="0"></iframe>
+<iframe id="wheel" src="" width="500" height="500" scrolling="no" frameborder="0"></iframe>
 </div>	
 
 <script>
