@@ -1,14 +1,13 @@
-
-
+var list = [];
 
 function chooseHouse(){
 
 var val = btn1.value;
-var x = "Please enter the number of new students."
+var x = "Please enter the NUMBER of new students."
 var a = "So there is going to be " + (val/4).toFixed() + " new witches and wizards in each house."
 var b = "So there is going to be about " + (val/4).toFixed() + " new witches and wizards in each house, give or take."
 
-	if(val == 0 || val == null )
+	if(val == 0 || val == null || isNaN(val))
 	{
 		alert(x)
 	} 
@@ -16,36 +15,60 @@ var b = "So there is going to be about " + (val/4).toFixed() + " new witches and
 	{
 		if(confirm(a))
 		{
+			document.getElementById("most").style.display = "none";
 			document.getElementById("line").innerHTML= "----------";
-			document.getElementById("new").style.display = "none";
-			document.getElementById("thebtn").style.display = "none";
-			document.getElementById("btn1").style.display = "none";
 			document.getElementById("wi").innerHTML = "Let the sorting Begin!!";
-			spin();
-			 //when OK is pushed, this value needs to be passed into the spinner and divided equally among houses
-			 //
+			document.getElementById("sort").style = "visibility: visible";
+			loop();	 
 		}
 	}
 	else
 	{
 		if(confirm(b))
 		{
+			document.getElementById("most").style.display = "none";
 			document.getElementById("line").innerHTML= "----------";
-			document.getElementById("new").style.display = "none";
-			document.getElementById("thebtn").style.display = "none";
-			document.getElementById("btn1").style.display = "none";
 			document.getElementById("wi").innerHTML = "Let the sorting Begin!!";
-			spin();
-			 //when OK is pushed, this value needs to be passed into the spinner and divided as close to equal as possible.
+			document.getElementById("sort").style = "visibility: visible";
+			loop();
 		}
 	}
 }
 
+/*
+Takes value from t
 
-function spin(){
+*/
+
+function loop(){
+	var a = btn1.value;
+	var s = 0;
 	
-var sp = document.getElementById("wheel").src = "http://wheeldecide.com/e.php?c1=Gryffindor&c2=Hufflepuff&c3=Ravenclaw&c4=Slytherin&c5=Gryffindor&c6=Hufflepuff&c7=Ravenclaw&c8=Slytherin&cols=BA224D,FAFA00,001180,1A7800,BA224D,FAFA00,001180,1A7800&t=Which+House&time=3&tcol=F2F250,000000,DEDD8E,C8CCCC,F2F250,000000,DEDD8E,C8CCCC"
+	for(var i = 1;i<=a;i++)
+	{
+		
+			if(s >= 4){
+				s=1;
+			}
+			else{
+				s++
+			}
+		
+		list[i]=s;
+	}
 
+	list = list.slice(1);
+	alert(list);
+}
+
+function sort(list){
+	var k = 0;
+	k++;
+	if(k !== 0)
+	{
+		
+	}
+	alert(list.length);
 }
 
 function restart(){

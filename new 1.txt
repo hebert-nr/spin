@@ -1,0 +1,28 @@
+<%@ page="" language="C#" autoeventwireup="true" codefile="Default.aspx.cs" inherits="Default_aspx"> <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head runat="server">
+<title>Untitled Page</title>
+</head><body><form id="form1" runat="server">
+<div><asp:formview datakeynames="CustomerID" datasourceid="SqlDataSource1" id="FormView1" runat="server">
+ <edititemtemplate>
+ CustomerID: <asp:label id="CustomerIDLabel1" runat="server" text="<%# Eval(&quot;CustomerID&quot;) %>" gt="" br="">
+ CompanyName: <asp:textbox id="CompanyNameTextBox" runat="server" text="<%# Bind(&quot;CompanyName&quot;) %>"></asp:textbox>
+ <br />ContactName: <asp:textbox id="ContactNameTextBox" runat="server" text="<%# Bind(&quot;ContactName&quot;) %>"></asp:textbox>
+ <br />ContactTitle: <asp:dropdownlist id="DropDownList1" runat="server" datavaluefield="ContactTitle" datatextfield="ContactTitle" datasourceid="SqlDataSource1" selectedvalue="<%# Bind(&quot;ContactTitle&quot;) %>"></asp:dropdownlist>
+ <asp:sqldatasource id="SqlDataSource1" runat="server" selectcommand="SELECT DISTINCT [ContactTitle] FROM [Customers]" connectionstring="<%$ ConnectionStrings:NorthwindConnectionString %>"></asp:sqldatasource><br /><asp:linkbutton id="UpdateButton" runat="server" text="Update" commandname="Update" causesvalidation="True"></asp:linkbutton>&nbsp;<asp:linkbutton id="UpdateCancelButton" runat="server" text="Cancel" commandname="Cancel" causesvalidation="False"></asp:linkbutton> </asp:label></edititemtemplate>
+ 
+ <itemtemplate>
+ CustomerID: <asp:label id="CustomerIDLabel" runat="server" text="<%# Eval(&quot;CustomerID&quot;) %>"></asp:label>
+ <br />CompanyName: <asp:label id="CompanyNameLabel" runat="server" text="<%# Bind(&quot;CompanyName&quot;) %>"></asp:label>
+ <br />ContactName: <asp:label id="ContactNameLabel" runat="server" text="<%# Bind(&quot;ContactName&quot;) %>"></asp:label>
+ <br />ContactTitle: <asp:label id="ContactTitleLabel" runat="server" text="<%# Bind(&quot;ContactTitle&quot;) %>"></asp:label>
+ <br /><asp:button id="EditButton" runat="server" text="Edit" commandname="Edit"></asp:button>
+ </itemtemplate>
+ 
+ <asp:sqldatasource id="SqlDataSource1" runat="server" 
+ selectcommand="SELECT [CustomerID], [CompanyName], [ContactName], [ContactTitle] FROM [Customers]" 
+ connectionstring="<%$ ConnectionStrings:NorthwindConnectionString %>"
+ updatecommand="UPDATE [Customers] SET [CompanyName] = @CompanyName, [ContactName] = @ContactName, [ContactTitle] = @ContactTitle WHERE [CustomerID] = @original_CustomerID">
+ </asp:sqldatasource>
+<div></div>
+</asp:formview></div>
+</form></body></html></%@>
