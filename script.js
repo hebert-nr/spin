@@ -77,7 +77,7 @@ for (i = list.length - 1; i > 0; i -= 1) {
 		list[i] = list[j]
 		list[j] = temp
 	}
-	alert(list);
+	
 }
 
 
@@ -105,7 +105,7 @@ function sort(){
 	else{
 		alert("All students sorted? Welcome to Hogwarts!" );
 	}
-	alert(list)
+	
 }
 
 
