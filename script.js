@@ -19,7 +19,8 @@ var b = "So there is going to be about " + (val/4).toFixed() + " new witches and
 			document.getElementById("line").innerHTML= "----------";
 			document.getElementById("wi").innerHTML = "Let the sorting Begin!!";
 			document.getElementById("sort").style = "visibility: visible";
-			loop();	 
+			loop();
+			shuffle();			
 		}
 	}
 	else
@@ -31,13 +32,14 @@ var b = "So there is going to be about " + (val/4).toFixed() + " new witches and
 			document.getElementById("wi").innerHTML = "Let the sorting Begin!!";
 			document.getElementById("sort").style = "visibility: visible";
 			loop();
+			shuffle();
 		}
 	}
 }
 
 /*
-Takes value from t
-
+Takes value entered from user and puts into an array, but only counts to 4 then repeats as there are 
+4 houses to be sorted from.
 */
 
 function loop(){
@@ -58,18 +60,54 @@ function loop(){
 	}
 
 	list = list.slice(1);
+}
+
+
+/*
+scrambles the array created above in random order.
+*/
+function shuffle(){
+	var i = 0
+    , j = 0
+    , temp = null
+
+for (i = list.length - 1; i > 0; i -= 1) {
+		j = Math.floor(Math.random() * (i + 1))
+		temp = list[i]
+		list[i] = list[j]
+		list[j] = temp
+	}
 	alert(list);
 }
 
-function sort(list){
-	var k = 0;
-	k++;
-	if(k !== 0)
+
+/*
+Pulls the first number from the array and matches it to the house name.
+*/
+function sort(){
+	var house = list.pop();
+	
+	if (house === 1)
 	{
-		
+		alert("Gryffindor!!");
 	}
-	alert(list.length);
+	else if (house === 2)
+	{
+		alert("Hufflepuff!!");
+	}
+	else if (house === 3)
+	{
+		alert("Slytherin!!");
+	}
+	else if (house ===4){
+		alert("Ravenclaw!!");
+	}
+	else{
+		alert("All students sorted? Welcome to Hogwarts!" );
+	}
+	alert(list)
 }
+
 
 function restart(){
 window.location.reload();
