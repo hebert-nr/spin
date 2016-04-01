@@ -26,6 +26,9 @@ body{
 	text-align:center;
 }
 
+#house{width:300px;
+height:300px;}
+
 #btn1{
 	font-family:wizard;
 	text-shadow: 3px 3px 2px #888;

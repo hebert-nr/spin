@@ -89,18 +89,18 @@ function sort(){
 	
 	if (house === 1)
 	{
-		alert("Gryffindor!!");
-	}
+		document.getElementById("house").style.backgroundImage = 'url("gry.png")';
+	}	
 	else if (house === 2)
 	{
-		alert("Hufflepuff!!");
+		document.getElementById("house").style.backgroundImage = 'url("huf.png")';
 	}
 	else if (house === 3)
 	{
-		alert("Slytherin!!");
+		document.getElementById("house").style.backgroundImage = 'url("rav.png")';
 	}
 	else if (house ===4){
-		alert("Ravenclaw!!");
+		document.getElementById("house").style.backgroundImage = 'url("sly.png")';
 	}
 	else{
 		alert("All students sorted? Welcome to Hogwarts!" );
