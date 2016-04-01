@@ -18,7 +18,7 @@ var b = "So there is going to be about " + (val/4).toFixed() + " new witches and
 			document.getElementById("most").style.display = "none";
 			document.getElementById("line").innerHTML= "----------";
 			document.getElementById("wi").innerHTML = "Let the sorting Begin!!";
-			document.getElementById("sort").style = "visibility: visible";
+			document.getElementById("sort").style = "display: inline-block";
 			loop();
 			shuffle();			
 		}
@@ -30,7 +30,7 @@ var b = "So there is going to be about " + (val/4).toFixed() + " new witches and
 			document.getElementById("most").style.display = "none";
 			document.getElementById("line").innerHTML= "----------";
 			document.getElementById("wi").innerHTML = "Let the sorting Begin!!";
-			document.getElementById("sort").style = "visibility: visible";
+			document.getElementById("sort").style = "display: inline-block";
 			loop();
 			shuffle();
 		}
@@ -90,6 +90,7 @@ function sort(){
 	if (house === 1)
 	{
 		document.getElementById("house").style.backgroundImage = 'url("gry.png")';
+
 	}	
 	else if (house === 2)
 	{
