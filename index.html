@@ -16,26 +16,35 @@ Apply a button "All Witches and Wizards Have been sorted."
 <head>
 <title>House Sorter</title>
 <link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/animate.css" />
 <script src="script.js"></script>
 </head>
 <body>
-<div id="most">
-	<div id="wrapper">
+
+<div id="wrapper">
+	<div id="most">
 		<div id="welcome">
 			<h2>Welcome Witches and Wizards!</h2>
 		</div>
 		<h4 id="new">How many new students do we have this year?</h4>
 		<input id="btn1" type="text" />
-		<button onclick="chooseHouse();" id="thebtn">Enter</button>
+		<button onclick="chooseHouse();" class="thebtn">Enter</button>
 	</div>
-</div>
+
 <div id="startSorting">
-	<h2 id="line"></h2>
-	<h2 id="wi"></h2>
-	<button style="visibility:hidden" onclick="sort();" id="sort">Sort!</button>
-</div>
-<button id="restart" onclick="restart()">Mischief Managed</button>
 	
+		
+		<div class="house">
+			<p style="background-repeat:no-repeat; display:inline-block;"></p>
+		</div>	
+		<h2 id="line"></h2>
+		<button onclick="sort();" style="display:none; vertical-align:center;" id="sort">Sort!</button>
+		<h2 id="wi"></h2>
+	
+</div>
+
+<button id="restart" class="thebtn" onclick="restart()">Mischief Managed</button>
+	</div>
 
 </body>
 

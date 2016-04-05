@@ -20,7 +20,7 @@ var b = "So there is going to be about " + (val/4).toFixed() + " new witches and
 			document.getElementById("most").style.display = "none";
 			document.getElementById("line").innerHTML= "----------";
 			document.getElementById("wi").innerHTML = "Let the sorting Begin!!";
-			document.getElementById("sort").style = "visibility: visible";
+			document.getElementById("sort").style = "display: inline-block";
 			loop();
 			shuffle();			
 		}
@@ -32,7 +32,7 @@ var b = "So there is going to be about " + (val/4).toFixed() + " new witches and
 			document.getElementById("most").style.display = "none";
 			document.getElementById("line").innerHTML= "----------";
 			document.getElementById("wi").innerHTML = "Let the sorting Begin!!";
-			document.getElementById("sort").style = "visibility: visible";
+			document.getElementById("sort").style = "display: inline-block";
 			loop();
 			shuffle();
 		}
@@ -88,24 +88,25 @@ Pulls the last number from the array and matches it to the house name.
 */
 function sort(){
 	var house = list.pop();
+	var code = document.getElementsByClassName("house")[0];
 	
 	if (house === 1)
 	{
-		alert("Gryffindor!!");
-	}
+		code.style.backgroundImage = 'url("gry.png")';		
+	}	
 	else if (house === 2)
 	{
-		alert("Hufflepuff!!");
+		code.style.backgroundImage = 'url("huf.png")';
 	}
 	else if (house === 3)
 	{
-		alert("Slytherin!!");
+		code.style.backgroundImage = 'url("rav.png")';
 	}
 	else if (house ===4){
-		alert("Ravenclaw!!");
+		code.style.backgroundImage = 'url("sly.png")';
 	}
 	else{
-		alert("All students sorted? Welcome to Hogwarts!" );
+		alert("Have all students been sorted? Welcome to Hogwarts!" );
 	}
 	
 }
