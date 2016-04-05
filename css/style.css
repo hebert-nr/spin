@@ -101,7 +101,7 @@ height:350px;
 }
 
 
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 480px){
 
 body{
 padding:0;
