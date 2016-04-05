@@ -1,5 +1,5 @@
 @font-face{
-	font-family:wizard;
+	font-family:"wizard";
 	src: url(MagicSchoolTwo.ttf);
 }
 
@@ -101,7 +101,7 @@ height:350px;
 }
 
 
-@media and (max-width: 480px){
+@media only screen and (min-width: 600px){
 
 body{
 padding:0;
@@ -133,8 +133,5 @@ width:97%;
 display: inline-block;
 }
 
-h2{
-
-}
 }
 
