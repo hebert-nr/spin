@@ -89,8 +89,7 @@ function sort(){
 	
 	if (house === 1)
 	{
-		document.getElementById("house").style.backgroundImage = 'url("gry.png")';
-
+		document.getElementById("house").style.backgroundImage = 'url("gry.png")';		
 	}	
 	else if (house === 2)
 	{

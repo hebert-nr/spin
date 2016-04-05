@@ -19,6 +19,11 @@ body{
 	background-image: url("../images/bkgrd.jpg");
 }
 
+#line{
+margin:0;
+padding:0;
+}
+
 .thebtn {
 	font-family:wizard;
 	border: 2px solid #a829f0;
@@ -59,10 +64,49 @@ background:#ffe6ff;
 background: #ff99cc;
 }
 
-#house{
+#house p{
+margin-left: auto;
+margin-right: auto;
+width:350px;
+height:350px;
+animation: fadein 1s;
+-moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
 
-width:300px;
-height:300px;}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 
 #btn1{
 	font-family:wizard;
@@ -90,7 +134,12 @@ height:300px;}
 }
 
 
-@media and (max-width: 420px){
+@media and (max-width: 480px){
+
+body{
+padding:0;
+margin:0;
+}
 
 #wrapper{
 width:97%;
@@ -112,6 +161,15 @@ width:97%;
     display: inline-block;
     margin: 20px 5px 10px 2px;
 	}
+
+#house{
+display: inline-block;
+margin: 0 130px;
+}
+
+h2{
+
+}
 
 
 }
