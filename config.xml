@@ -4,7 +4,7 @@
 	xmlns:gap   = "http://phonegap.com/ns/1.0"
 	id          = "com.phonegap.HPSorter"
 	version     = "0.9.8"
-	versionCode = "10" >
+	versionCode = "10">
 
 	<preference name="phonegap-version" value="cli-5.2.0" />
 
@@ -14,17 +14,17 @@
 	<name>Sorter</name>
 	<content src="index.html"/>
 	<platform name="wp8">
-		<icon src="images/sortIcon.png" gap:platform="winphone" />
-		<icon src="images/sortIcon.png" gap:platform="winphone" gap:role="background" />
+		<icon src="images/newIcon.png" gap:platform="winphone" />
+		<icon src="images/newIcon.png" gap:platform="winphone" gap:role="background" />
 	</platform>
 	
 	<platform name="android">
-		<icon src="images/sortIcon.png" gap:platform="android" gap:qualifier="ldpi" />
-		<icon src="images/sortIcon.png" gap:platform="android" gap:qualifier="mdpi" />
-		<icon src="images/sortIcon.png" gap:platform="android" gap:qualifier="hdpi" />
-		<icon src="images/sortIcon.png" gap:platform="android" gap:qualifier="xhdpi" />
-		<icon src="images/sortIcon.png" gap:platform="android" gap:qualifier="xxhdpi" />
-		<icon src="images/sortIcon.png" gap:platform="android" gap:qualifier="fr-xxhdpi" />	
+		<icon src="images/newIcon.png" gap:platform="android" gap:qualifier="ldpi" />
+		<icon src="images/newIcon.png" gap:platform="android" gap:qualifier="mdpi" />
+		<icon src="images/newIcon.png" gap:platform="android" gap:qualifier="hdpi" />
+		<icon src="images/newIcon.png" gap:platform="android" gap:qualifier="xhdpi" />
+		<icon src="images/newIcon.png" gap:platform="android" gap:qualifier="xxhdpi" />
+		<icon src="images/newIcon.png" gap:platform="android" gap:qualifier="fr-xxhdpi" />	
 	</platform>
 	<platform name="ios">
 	</platform>
