@@ -24,6 +24,10 @@ margin:0;
 padding:0;
 }
 
+#new{
+	margin:8px 12px;
+}
+
 .thebtn {
 	font-family:wizard;
 	border: 2px solid #a829f0;
@@ -69,6 +73,7 @@ background-repeat:no-repeat;
 }
 
 .house{
+	background-repeat:no-repeat;
 margin-left: auto;
 margin-right: auto;
 width:350px;
@@ -85,12 +90,13 @@ height:350px;
 #welcome{
 	padding-top: 1px;
 }
+
 #wrapper{
-	color:#470b94;
+	color:#2a0e4d;
 	text-align:center;
 	margin: 0 auto;
+	margin-top:40px;
 	max-width: 1120px;
-	min-width: 375px;
 	width: 71%;
 	height: 100%;
 	background-image: url("scroll.jpg");
@@ -102,23 +108,18 @@ height:350px;
 
 
 @media screen and (max-width: 600px){
-
-body{
-padding:0;
-margin:0;
-}
-
 #wrapper{
-width:97%;
+width:92%;
 }
 
+#sort
 
 #thebtn{
     border: 1px solid #1b93df;
     border-radius: 3px;
     font-family: Arial;
     color: #1b93df !important;
-    font-size: 14px;
+    font-size: 100%;
     background: #fff;
     background-color: transparent;
     padding: 6px 14px 6px 14px;
@@ -132,6 +133,8 @@ width:97%;
 .house{
 display: inline-block;
 }
-
+#wi{
+	margin-top:0;
+}
 }
 
