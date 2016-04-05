@@ -1,5 +1,7 @@
 var list = [];
 
+
+//collects the number of users and sets the display based off the number of users entered
 function chooseHouse(){
 
 var val = btn1.value;
@@ -40,6 +42,8 @@ var b = "So there is going to be about " + (val/4).toFixed() + " new witches and
 /*
 Takes value entered from user and puts into an array, but only counts to 4 then repeats as there are 
 4 houses to be sorted from.
+
+slice removes first index, which is a blank
 */
 
 function loop(){
@@ -48,14 +52,12 @@ function loop(){
 	
 	for(var i = 1;i<=a;i++)
 	{
-		
-			if(s >= 4){
-				s=1;
-			}
-			else{
-				s++
-			}
-		
+		if(s >= 4){
+			s=1;
+		}
+		else{
+			s++
+		}
 		list[i]=s;
 	}
 
@@ -82,7 +84,7 @@ for (i = list.length - 1; i > 0; i -= 1) {
 
 
 /*
-Pulls the first number from the array and matches it to the house name.
+Pulls the last number from the array and matches it to the house name.
 */
 function sort(){
 	var house = list.pop();
@@ -108,7 +110,7 @@ function sort(){
 	
 }
 
-
+//reloads the program so user can start over again 
 function restart(){
 window.location.reload();
 }
