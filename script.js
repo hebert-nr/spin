@@ -86,24 +86,25 @@ Pulls the first number from the array and matches it to the house name.
 */
 function sort(){
 	var house = list.pop();
+	var code = document.getElementsByClassName("house")[0];
 	
 	if (house === 1)
 	{
-		document.getElementById("house").style.backgroundImage = 'url("gry.png")';		
+		code.style.backgroundImage = 'url("gry.png")';		
 	}	
 	else if (house === 2)
 	{
-		document.getElementById("house").style.backgroundImage = 'url("huf.png")';
+		code.style.backgroundImage = 'url("huf.png")';
 	}
 	else if (house === 3)
 	{
-		document.getElementById("house").style.backgroundImage = 'url("rav.png")';
+		code.style.backgroundImage = 'url("rav.png")';
 	}
 	else if (house ===4){
-		document.getElementById("house").style.backgroundImage = 'url("sly.png")';
+		code.style.backgroundImage = 'url("sly.png")';
 	}
 	else{
-		alert("All students sorted? Welcome to Hogwarts!" );
+		alert("Have all students been sorted? Welcome to Hogwarts!" );
 	}
 	
 }
