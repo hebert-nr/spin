@@ -21,7 +21,7 @@ var b = "So there is going to be about " + (val/4).toFixed() + " new witches and
 			document.getElementById("line").innerHTML= "----------";
 			document.getElementById("wi").innerHTML = "Let the sorting Begin!!";
 			document.getElementById("sort").style.display = "inline-block";
-			document.getElementsByClassName("house")[0].style.display="inline-block";
+			document.getElementsByClassName("house")[0].style.display="none";
 			loop();
 			shuffle();			
 		}
@@ -34,7 +34,7 @@ var b = "So there is going to be about " + (val/4).toFixed() + " new witches and
 			document.getElementById("line").innerHTML= "----------";
 			document.getElementById("wi").innerHTML = "Let the sorting Begin!!";
 			document.getElementById("sort").style.display = "inline-block";
-			document.getElementsByClassName("house")[0].style.display="inline-block";
+			document.getElementsByClassName("house")[0].style.display="none";
 			loop();
 			shuffle();
 		}
@@ -91,6 +91,9 @@ Pulls the last number from the array and matches it to the house name.
 function sort(){
 	var house = list.pop();
 	var code = document.getElementsByClassName("house")[0];
+	code.style.display="inline-block";
+	document.getElementById("wi").style.display="none";
+	
 	
 	if (house === 1)
 	{
