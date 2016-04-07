@@ -3,13 +3,11 @@
 
 	xmlns:gap   = "http://phonegap.com/ns/1.0"
 	id          = "com.phonegap.HPSorter"
-	version     = "0.9.8"
+	version     = "0.9.22"
 	versionCode = "10">
 
 	<preference name="phonegap-version" value="cli-5.2.0" />
 	<gap:splash src="sorthat.jpg" gap:platform="winphone" />
-	<preference name="SplashScreenDelay" value="3000" />
-	<preference name="auto-hide-splash-screen" value="false" />
 	<preference name="Orientation" value="portrait" />		
 	
    
