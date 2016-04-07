@@ -6,30 +6,15 @@ function chooseHouse(){
 
 var val = btn1.value;
 var x = "Please enter the NUMBER of new students."
-var a = "So there is going to be " + (val/4).toFixed() + " new witches and wizards in each house."
-var b = "So there is going to be about " + (val/4).toFixed() + " new witches and wizards in each house, give or take."
+
 
 	if(val == 0 || val == null || isNaN(val))
 	{
 		alert(x)
 	} 
-	else if(val%4==0)
-	{
-		if(confirm(a))
-		{
-			document.getElementById("most").style.display = "none";
-			document.getElementById("line").innerHTML= "----------";
-			document.getElementById("wi").innerHTML = "Let the sorting Begin!!";
-			document.getElementById("sort").style.display = "inline-block";
-			document.getElementsByClassName("house")[0].style.display="none";
-			loop();
-			shuffle();			
-		}
-	}
 	else
 	{
-		if(confirm(b))
-		{
+		
 			document.getElementById("most").style.display = "none";
 			document.getElementById("line").innerHTML= "----------";
 			document.getElementById("wi").innerHTML = "Let the sorting Begin!!";
@@ -37,7 +22,7 @@ var b = "So there is going to be about " + (val/4).toFixed() + " new witches and
 			document.getElementsByClassName("house")[0].style.display="none";
 			loop();
 			shuffle();
-		}
+		
 	}
 }
 
