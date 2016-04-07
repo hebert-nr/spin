@@ -13,12 +13,12 @@
     <gap:plugin name="org.apache.cordova.splashscreen" />
     <preference name="auto-hide-splash-screen" value="false" />
     <preference name="SplashScreenDelay" value="3000" />
+	<splash src="splash.png" />
 	
 	<name>Sorter</name>
 	<content src="index.html"/>
 	<platform name="wp8">
-	<splash src="splash.png" platform="winphone" />
-	<splash platform="winphone" width="1152" height="1920" src="splash.png" />
+		<splash src="sorthat.png" platform="winphone" />
 		<icon src="images/newIcon.png" gap:platform="winphone" />
 		<icon src="images/newIcon.png" gap:platform="winphone" gap:role="background" />
 	</platform>
