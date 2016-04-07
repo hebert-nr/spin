@@ -7,7 +7,7 @@
 	versionCode = "10">
 
 	<preference name="phonegap-version" value="cli-5.2.0" />
-
+<gap:splash src="sorthat.jpg" gap:platform="winphone" />
 	<preference name="Orientation" value="portrait" />		
 	
    
