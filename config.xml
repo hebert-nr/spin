@@ -14,7 +14,8 @@
 	<name>Sorter</name>
 	<content src="index.html"/>
 	<platform name="wp8">
-		<splash platform="winphone" width="1152" height="1920" src="sorthat.png" />
+	<splash src="splash.png" />
+		<splash platform="winphone" width="1152" height="1920" src="splash.png" />
 		<icon src="images/newIcon.png" gap:platform="winphone" />
 		<icon src="images/newIcon.png" gap:platform="winphone" gap:role="background" />
 	</platform>
