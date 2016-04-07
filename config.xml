@@ -8,8 +8,8 @@
 
 	<preference name="phonegap-version" value="cli-5.2.0" />
 	<gap:splash src="sorthat.jpg" gap:platform="winphone" />
-	<gap:splash name="SplashScreenDelay" value="3000" />
-	<gap:splash name="auto-hide-splash-screen" value="false" />
+	<preference name="SplashScreenDelay" value="3000" />
+	<preference name="auto-hide-splash-screen" value="false" />
 	<preference name="Orientation" value="portrait" />		
 	
    
