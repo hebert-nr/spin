@@ -7,7 +7,7 @@
 	versionCode = "10">
 
 	<preference name="phonegap-version" value="cli-5.2.0" />
-<preference name="SplashScreen" value="splash" />
+	<preference name="SplashScreen" value="splash" />
 	<preference name="Orientation" value="portrait" />		
 	<gap:plugin name="org.apache.cordova.device" />
     <gap:plugin name="org.apache.cordova.splashscreen" />
@@ -17,6 +17,8 @@
 	<name>Sorter</name>
 	<content src="index.html"/>
 	<platform name="wp8">
+	<splash src="splash.png" platform="winphone" />
+	<splash platform="winphone" width="1152" height="1920" src="splash.png" />
 		<icon src="images/newIcon.png" gap:platform="winphone" />
 		<icon src="images/newIcon.png" gap:platform="winphone" gap:role="background" />
 	</platform>
