@@ -81,7 +81,7 @@ for (i = list.length - 1; i > 0; i -= 1) {
 		list[i] = list[j]
 		list[j] = temp
 	}
-	
+	document.body.scrollTop = document.documentElement.scrollTop = 0;
 }
 
 
@@ -99,33 +99,35 @@ function sort(){
 	{
 		code.style.backgroundImage = 'url("gry.png")';
 		code.style.WebkitAnimation = "fadein 1s ";
-		code.style.animation = "fadein 1s ";
+		
 	}	
 	else if (house === 2)
 	{
 		code.style.backgroundImage = 'url("huf.png")';
 		code.style.WebkitAnimation = "fadein 1s ";
-		code.style.animation = "fadein 1s ";
+		
 	}
 	else if (house === 3)
 	{
 		code.style.backgroundImage = 'url("rav.png")';
 		code.style.WebkitAnimation = "fadein 1s ";
-		code.style.animation = "fadein 1s ";
+		
 	}
 	else if (house ===4){
 		code.style.backgroundImage = 'url("sly.png")';
 		code.style.WebkitAnimation = "fadein 1s ";
-		code.style.animation = "fadein 1s ";
+		
 	}
 	else{
 		
 		code.style.backgroundImage='url("hogCrest.png")';
+		code.style.WebkitAnimation = "fadein 1s ";
 		document.getElementById("wi").innerHTML="Sort Complete!";
 		document.getElementById("wi").style.paddingBottom = "0";
 		document.getElementById("wi").style.marginBottom = "0";
 		document.getElementById("line").innerHTML="Welcome to Hogwarts!!";
 		document.getElementById("sort").style.display = "none";
+		
 	}
 	
 }
