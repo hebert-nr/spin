@@ -14,27 +14,27 @@ Apply a button "All Witches and Wizards Have been sorted."
 <!DOCTYPE html>
 <html>
 <head>
-<script type="text/javascript" charset="utf-8">
-document.AddEventListener("deviceready", OnDeviceReady, false);
-function OnDeviceReady() {
-  setTimeout(function() {
-      navigator.splashscreen.hide();
-    }, 
-    3000);
-}
+<script>
+var fadeOut = function(){
+        $(".house").fadeOut();
+};
+var fadeIn = function(){
+        $(".house").fadeIn();
+};
 </script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>House Sorter</title>
 <link rel="stylesheet" type="text/css" href="css/style.css" />
 <link rel="stylesheet" type="text/css" href="css/animate.css" />
 <script src="script.js"></script>
+<script src="jquery.min.js"></script>
 </head>
 <body>
 
 <div id="wrapper">
 	<div id="most">
 		<div id="welcome">
-			<p>Welcome Witches and Wizards!</>
+			<p>Welcome Witches and Wizards!</p>
 		</div>
 		<p id="new">How many new students do we have this year?</p>
 		<input id="btn1" type="number" />
@@ -48,7 +48,7 @@ function OnDeviceReady() {
 			
 		</div>	
 		<h2 id="line"></h2>
-		<button onclick="sort();" style="display:none; vertical-align:center;" id="sort">Sort!</button>
+		<button onclick="fadeOut();sort();fadeIn();" style="display:none; vertical-align:center;" id="sort">Sort!</button>
 		
 	
 </div>

@@ -56,6 +56,7 @@ function loop(){
 scrambles the array created above in random order.
 */
 function shuffle(){
+	
 	var i = 0
     , j = 0
     , temp = null
@@ -67,6 +68,7 @@ for (i = list.length - 1; i > 0; i -= 1) {
 		list[j] = temp
 	}
 	document.body.scrollTop = document.documentElement.scrollTop = 0;
+	
 }
 
 
@@ -76,32 +78,28 @@ Pulls the last number from the array and matches it to the house name.
 function sort(){
 	var house = list.pop();
 	var code = document.getElementsByClassName("house")[0];
+	
 	code.style.display="inline-block";
 	document.getElementById("wi").style.display="none";
 	
 	
 	if (house === 1)
 	{
-		code.style.backgroundImage = 'url("gry.png")';
-		code.style.WebkitAnimation = "fadein 1s ";
-		code.style.animation = "fadein 1s ";
+		code.style.backgroundImage = 'url("gry.png")';		
 	}	
 	else if (house === 2)
 	{
 		code.style.backgroundImage = 'url("huf.png")';
-		code.style.WebkitAnimation = "fadein 1s ";
-		code.style.animation = "fadein 1s ";
+	
 	}
 	else if (house === 3)
 	{
 		code.style.backgroundImage = 'url("rav.png")';
-		code.style.WebkitAnimation = "fadein 1s ";
-		code.style.animation = "fadein 1s ";
+	
 	}
 	else if (house ===4){
 		code.style.backgroundImage = 'url("sly.png")';
-		code.style.WebkitAnimation = "fadein 1s ";
-		code.style.animation = "fadein 1s ";
+	
 	}
 	else{
 		
