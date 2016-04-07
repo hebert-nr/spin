@@ -3,7 +3,7 @@
 
 	xmlns:gap   = "http://phonegap.com/ns/1.0"
 	id          = "com.phonegap.HPSorter"
-	version     = "0.9.8"
+	version     = "0.9.15"
 	versionCode = "10">
 
 	<preference name="phonegap-version" value="cli-5.2.0" />
@@ -14,6 +14,7 @@
 	<name>Sorter</name>
 	<content src="index.html"/>
 	<platform name="wp8">
+		<splash platform="winphone" width="1152" height="1920" src="sorthat.png" />
 		<icon src="images/newIcon.png" gap:platform="winphone" />
 		<icon src="images/newIcon.png" gap:platform="winphone" gap:role="background" />
 	</platform>
