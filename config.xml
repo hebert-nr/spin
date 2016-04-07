@@ -9,6 +9,7 @@
 	<preference name="phonegap-version" value="cli-5.2.0" />
 	<preference name="SplashScreenDelay" value="3000" />
 	<preference name="SplashScreen" value="splash" />
+	<gap:splash src="splash.png" /> 
 	<preference name="Orientation" value="portrait" />		
 	
    
