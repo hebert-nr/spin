@@ -7,7 +7,7 @@
 	versionCode = "10">
 
 	<preference name="phonegap-version" value="cli-5.2.0" />
-<preference name="SplashScreenDelay" value="3000" />
+	<preference name="SplashScreenDelay" value="3000" />
 	<preference name="Orientation" value="portrait" />		
 	
    
@@ -15,7 +15,7 @@
 	<content src="index.html"/>
 	
 	<platform name="wp8">
-	<splash src="res/screen/wp8/SplashScreenImage.jpg" width="768" height="1280"/>
+	<splash src="splash.png" width="768" height="1280"/>
 		<icon src="images/newIcon.png" gap:platform="winphone" />
 		<icon src="images/newIcon.png" gap:platform="winphone" gap:role="background" />
 	</platform>
