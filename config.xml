@@ -5,19 +5,16 @@
 	id          = "com.phonegap.HPSorter"
 	version     = "0.9.15"
 	versionCode = "10">
-	
-	
+
 	<preference name="phonegap-version" value="cli-5.2.0" />
-	<preference name="SplashScreen" value="screen"/>
 	<preference name="SplashScreenDelay" value="3000" />
 	<preference name="Orientation" value="portrait" />		
-	<gap:plugin name="org.apache.cordova.splashscreen" />
-	<gap:splash src="splash.png"/>
+	
    
 	<name>Sorter</name>
 	<content src="index.html"/>
 	<platform name="wp8">
-		<splash src="splash.png" />
+	<splash src="splash.png" />
 		<splash platform="winphone" width="1152" height="1920" src="splash.png" />
 		<icon src="images/newIcon.png" gap:platform="winphone" />
 		<icon src="images/newIcon.png" gap:platform="winphone" gap:role="background" />
