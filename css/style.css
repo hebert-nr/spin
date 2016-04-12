@@ -5,7 +5,7 @@
 }
 html{
 	font-family:wizard, constantia;
-	font-size:2.5em;
+	font-size:2.2em;
 	text-shadow: 2px 2px 1px #a829f0;
 }
 input{
@@ -14,20 +14,22 @@ input{
 }
 body{
 	background-image: url("../images/bkgrd.jpg");
+	
 }
 #line{
 margin:0;
 padding:0;
 }
 #new{
-	margin:8px 12px;	
+	margin:8px 12px;
+	font-size:.9em;
 }
 .thebtn {
 	font-family:wizard;
 	border: 2px solid #a829f0;
     border-radius: 3px;
     font-family: wizard;
-    color: #a829f0 !important;
+    color: #000;
     font-size: 20px;
     background: #fff;
     background-color: transparent;
@@ -53,6 +55,10 @@ font-family:wizard;
     text-shadow: 0 1px 0 #FFF;
     display: inline-block;
     margin: 20px 5px 10px 2px;
+}
+
+#restart{
+	font-size:20px;
 }
 .thebtn:hover, #sort:hover{
 background:#ffe6ff;
@@ -100,6 +106,8 @@ height:275px;
 @media screen and (max-width: 600px){
 #wrapper{
 width:92%;
+margin:0 auto;
+text-align:center;
 }
 #thebtn{
     border: 1px solid #1b93df;
@@ -123,8 +131,5 @@ margin-right:auto;
 }
 #wi{
 	padding-top:32px; 
-}
-#line{
-	width:90%;
 }
 }

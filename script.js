@@ -10,7 +10,6 @@ var x = "Please enter the NUMBER of new students."
 	else
 	{
 		document.getElementById("most").style.display = "none";
-		document.getElementById("line").innerHTML= "----------";
 		document.getElementById("wi").innerHTML = "Let the sorting Begin!!";
 		document.getElementById("sort").style.display = "inline-block";
 		document.getElementsByClassName("house")[0].style.display="none";
