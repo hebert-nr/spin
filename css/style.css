@@ -1,6 +1,7 @@
 @font-face{
 	font-family:"wizard";
-	src: url("MagicSchoolTwo.woff");
+	src: url("MagicSchoolTwo.woff"),
+		 url("MagicSchoolTwo.ttf");
 	
 }
 

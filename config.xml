@@ -3,7 +3,7 @@
 
 	xmlns:gap   = "http://phonegap.com/ns/1.0"
 	id          = "com.phonegap.HPSorter"
-	version     = "0.9.22"
+	version     = "1.0.0"
 	versionCode = "10">
 
 	<preference name="phonegap-version" value="cli-5.2.0" />
@@ -30,7 +30,7 @@
 	</platform>
 	
 	<description>
-		<h3 style="color:#005406;">!!!BETA VERSION!!!</h3>
+		<h3 style="color:#005406;">BIRTHDAY VERSION READY FOR LAUNCH!</h3>
 			<h3><strong>Still in test mode </strong></h3>
 			<p>It's an app used to sort people into "houses" according to a popular story. Exclusive use will be for a personal birthday party.</p>
 	</description>
