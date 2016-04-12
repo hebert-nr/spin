@@ -2,36 +2,26 @@
 	font-family:"wizard";
 	src: url("MagicSchoolTwo.woff"),
 		 url("MagicSchoolTwo.ttf");
-	
 }
-
 html{
 	font-family:wizard, constantia;
 	font-size:2.5em;
 	text-shadow: 2px 2px 1px #a829f0;
 }
-
 input{
 	background-color:transparent;
 	width: 100px;
 }
-
 body{
-	
 	background-image: url("../images/bkgrd.jpg");
 }
-
 #line{
 margin:0;
 padding:0;
 }
-
 #new{
-	margin:8px 12px;
-	
+	margin:8px 12px;	
 }
-
-
 .thebtn {
 	font-family:wizard;
 	border: 2px solid #a829f0;
@@ -67,11 +57,9 @@ font-family:wizard;
 .thebtn:hover, #sort:hover{
 background:#ffe6ff;
 }
-
 .thebtn:active, #sort:active{
 background: #ff99cc;
 }
-
 .house{
 background-repeat:no-repeat;
 margin-left: auto;
@@ -79,14 +67,12 @@ margin-right: auto;
 width:275px;
 height:275px;
 }
-
 #btn1{
 	font-family:wizard;
 	text-shadow: 3px 3px 2px #888;
 	font-size:inherit;
 	text-align:center;
 }
-
 #welcome{
 	padding-top: 6%;
 }
@@ -96,7 +82,6 @@ height:275px;
 	font-size:1.4em;
 	width:85%;
 }
-
 #wrapper{
 	color:#2a0e4d;
 	text-align:center;
@@ -112,15 +97,10 @@ height:275px;
 	border-radius: 3px;
 	box-shadow: 0 0 10px rgba(12, 3, 25, 0.8);
 }
-
-
 @media screen and (max-width: 600px){
 #wrapper{
 width:92%;
-
 }
-
-
 #thebtn{
     border: 1px solid #1b93df;
     border-radius: 3px;
@@ -136,13 +116,10 @@ width:92%;
     display: inline-block;
     margin: 20px 5px 10px 2px;
 	}
-
 .house{
 background-repeat:no-repeat;
-margin:0 auto;
-padding: 12px 0 0 4px;
-width:100%;
-height:275px;
+margin-left:auto;
+margin-right:auto;
 }
 #wi{
 	padding-top:32px; 
@@ -151,4 +128,3 @@ height:275px;
 	width:90%;
 }
 }
-
