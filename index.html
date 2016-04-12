@@ -14,14 +14,7 @@ Apply a button "All Witches and Wizards Have been sorted."
 <!DOCTYPE html>
 <html>
 <head>
-<script>
-var fadeOut = function(){
-        $(".house").fadeOut();
-};
-var fadeIn = function(){
-        $(".house").fadeIn();
-};
-</script>
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>House Sorter</title>
 <link rel="stylesheet" type="text/css" href="css/style.css" />
@@ -41,21 +34,16 @@ var fadeIn = function(){
 		<button onclick="chooseHouse();" class="thebtn">Enter</button>
 	</div>
 
-<div id="startSorting">
-	<h2 id="wi" ></h2>
-		
-		<div class="house" style="display:none;">
-			
-		</div>	
+	<div id="startSorting">
+		<h2 id="wi" ></h2>
+			<div class="house" style="display:none;">
+			</div>	
 		<h2 id="line"></h2>
-		<button onclick="fadeOut();sort();fadeIn();" style="display:none; vertical-align:center;" id="sort">Sort!</button>
-		
-	
-</div>
-
-<button id="restart" class="thebtn" onclick="restart()">Mischief Managed</button>
+		<button onclick="sort();" style="display:none; vertical-align:center;" id="sort">Sort!</button>	
 	</div>
 
+	<button id="restart" class="thebtn" onclick="restart()">Mischief Managed</button>
+</div>
 </body>
 
 </html>

@@ -14,15 +14,13 @@ var x = "Please enter the NUMBER of new students."
 	} 
 	else
 	{
-		
-			document.getElementById("most").style.display = "none";
-			document.getElementById("line").innerHTML= "----------";
-			document.getElementById("wi").innerHTML = "Let the sorting Begin!!";
-			document.getElementById("sort").style.display = "inline-block";
-			document.getElementsByClassName("house")[0].style.display="none";
-			loop();
-			shuffle();
-		
+		document.getElementById("most").style.display = "none";
+		document.getElementById("line").innerHTML= "----------";
+		document.getElementById("wi").innerHTML = "Let the sorting Begin!!";
+		document.getElementById("sort").style.display = "inline-block";
+		document.getElementsByClassName("house")[0].style.display="none";
+		loop();
+		shuffle();
 	}
 }
 
@@ -47,7 +45,6 @@ function loop(){
 		}
 		list[i]=s;
 	}
-
 	list = list.slice(1);
 }
 
@@ -59,17 +56,24 @@ function shuffle(){
 	
 	var i = 0
     , j = 0
-    , temp = null
+    , temp = null;
 
 for (i = list.length - 1; i > 0; i -= 1) {
 		j = Math.floor(Math.random() * (i + 1))
-		temp = list[i]
-		list[i] = list[j]
-		list[j] = temp
+		temp = list[i];
+		list[i] = list[j];
+		list[j] = temp;
 	}
 	document.body.scrollTop = document.documentElement.scrollTop = 0;
-	
 }
+
+
+var fadeOut = function(){
+        $(".house").fadeOut("slow");
+};
+var fadeIn = function(){
+        $(".house").fadeIn(2000);
+};
 
 
 /*
@@ -78,35 +82,40 @@ Pulls the last number from the array and matches it to the house name.
 function sort(){
 	var house = list.pop();
 	var code = document.getElementsByClassName("house")[0];
-	
-	code.style.display="inline-block";
 	document.getElementById("wi").style.display="none";
-	
+	code.style.display="none";
+	fadeOut();
 	
 	if (house === 1)
 	{
-		code.style.backgroundImage = 'url("gry.png")';		
+		
+		fadeIn();
+		code.style.backgroundImage = 'url("gry.png")';
+		
 	}	
 	else if (house === 2)
 	{
+
+		fadeIn();
 		code.style.backgroundImage = 'url("huf.png")';
-	
+		
 	}
 	else if (house === 3)
 	{
+		
+		fadeIn();
 		code.style.backgroundImage = 'url("rav.png")';
-	
+		
 	}
-	else if (house ===4){
+	else if (house ===4)
+	{
+
+		fadeIn();
 		code.style.backgroundImage = 'url("sly.png")';
-	
+		
 	}
 	else{
-		
 		code.style.backgroundImage='url("hogCrest.png")';
-		document.getElementById("wi").innerHTML="Sort Complete!";
-		document.getElementById("wi").style.paddingBottom = "0";
-		document.getElementById("wi").style.marginBottom = "0";
 		document.getElementById("line").innerHTML="Welcome to Hogwarts!!";
 		document.getElementById("sort").style.display = "none";
 	}
