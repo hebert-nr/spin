@@ -67,6 +67,7 @@ function sort(){
 	var code = document.getElementsByClassName("house")[0];
 	document.getElementById("wi").style.display="none";
 	code.style.display="none";
+	document.getElementById("sort").src='sortbtnnew.png';
 	fadeOut();
 	if (house === 1)
 	{
@@ -92,10 +93,12 @@ function sort(){
 	else{
 		fadeIn("fast");
 		code.style.backgroundImage='url("hogCrest.png")';
-		document.getElementById("line").innerHTML="Welcome to Hogwarts!!";
+		code.style.height='305px';
+		document.getElementById("line").innerHTML="to <br /> Hogwarts!!";
 		document.getElementById("sort").style.display = "none";
 	}
 }
+
 //reloads the program so user can start over again 
 function restart(){
 window.location.reload();
