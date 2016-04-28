@@ -67,7 +67,6 @@ function sort(){
 	var code = document.getElementsByClassName("house")[0];
 	document.getElementById("wi").style.display="none";
 	code.style.display="none";
-	document.getElementById("sort").src='sortbtnnew.png';
 	fadeOut();
 	if (house === 1)
 	{
