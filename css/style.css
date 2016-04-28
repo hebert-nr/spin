@@ -47,10 +47,10 @@ padding:0;
 #restart{
 	font-size:20px;
 }
-.thebtn:hover, #sort:hover{
+.thebtn:hover{
 background:#ffe6ff;
 }
-.thebtn:active, #sort:active{
+.thebtn:active{
 background: #ff99cc;
 }
 .house{
