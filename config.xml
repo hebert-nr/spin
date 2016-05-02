@@ -2,17 +2,13 @@
 <widget xmlns = "http://www.w3.org/ns/widgets"
 	xmlns:gap   = "http://phonegap.com/ns/1.0"
 	id          = "com.phonegap.HPSorter"
-	version     = "1.0.0"
+	version     = "1.1.0"
 	versionCode = "10">
 	<preference name="phonegap-version" value="cli-5.2.0" />
-	<gap:splash src="sorthat.jpg" gap:platform="winphone" />
+	<gap:splash src="sorthat.png" />
 	<preference name="Orientation" value="portrait" />		
 	<name>Sorter</name>
 	<content src="index.html"/>
-	<platform name="wp8">
-		<icon src="images/newIcon.png" gap:platform="winphone" />
-		<icon src="images/newIcon.png" gap:platform="winphone" gap:role="background" />
-	</platform>
 	<platform name="android">
 		<icon src="images/newIcon.png" gap:platform="android" gap:qualifier="ldpi" />
 		<icon src="images/newIcon.png" gap:platform="android" gap:qualifier="mdpi" />
@@ -28,12 +24,9 @@
 		<splash src="port-xxhdpi.png" platform="android" qualifier="port-xxhdpi" />
 		<splash src="land-xxhdpi.png" platform="android" qualifier="land-xxhdpi" />		
 	</platform>
-	<platform name="ios">
-	</platform>
 	<description>
 		<h3 style="color:#005406;">BIRTHDAY VERSION READY FOR LAUNCH!</h3>
-			<h3><strong>Still in test mode </strong></h3>
-			<p>It's an app used to sort people into "houses" according to a popular story. Exclusive use will be for a personal birthday party.</p>
+			<p>Sort a group into houses as according to an international best selling story. Exclusive use will be for a personal birthday party.</p>
 	</description>
 	<author email="sodajrrk@gmail.com">
 		Noah Hebert
